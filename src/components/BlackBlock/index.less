@@ -1,0 +1,30 @@
+.blackBlock {
+  background: #1a1a1a;
+  margin: 0;
+  display: block;
+  line-height: 1.75;
+}
+
+@media screen and (min-width: 44.375em) {
+  .blackBlock:not(.custom-background-image):before {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 44.375em) {
+  .blackBlock:before,
+  .blackBlock:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 21px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+}
+
+.blackBlock:after {
+  bottom: 0;
+}

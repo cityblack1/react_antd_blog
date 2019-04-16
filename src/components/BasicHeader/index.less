@@ -1,0 +1,240 @@
+.BasicHeader {
+  display: block;
+  box-sizing: inherit;
+  padding: 2.625em 7.6923%;
+}
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+  vertical-align: middle;
+  border: 0;
+}
+
+.header-image a:hover img,
+.header-image a:focus img {
+  opacity: 0.85;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.site-branding .site-title a {
+  color: #1a1a1a;
+}
+
+.site-branding .site-title a:hover,
+.site-branding .site-title a:focus {
+  color: #007acc;
+}
+
+.clear:before,
+.clear:after,
+blockquote:before,
+blockquote:after,
+.entry-content:before,
+.entry-content:after,
+.entry-summary:before,
+.entry-summary:after,
+.comment-content:before,
+.comment-content:after,
+.site-content:before,
+.site-content:after,
+.site-main > article:before,
+.site-main > article:after,
+.primary-menu:before,
+.primary-menu:after,
+.social-links-menu:before,
+.social-links-menu:after,
+.textwidget:before,
+.textwidget:after,
+.content-bottom-widgets:before,
+.content-bottom-widgets:after {
+  content: '';
+  display: table;
+}
+
+.main-navigation .primary-menu {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.site-title {
+  font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft YaHei', '\9ED1\4F53', Arial,
+    sans-serif;
+  font-size: 23px;
+  font-size: 1.4375rem;
+  font-weight: 350;
+  line-height: 1.2173913043;
+  margin: 0;
+}
+
+.header-image {
+  clear: both;
+  margin: 0.875em 0;
+}
+
+.site-description {
+  color: #686868;
+  display: none;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.0769230769;
+  margin: 0.538461538em 0 0;
+}
+
+.main-navigation li {
+  border-top: 1px solid #d1d1d1;
+  position: relative;
+}
+
+.site-header-main {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.site-header-menu {
+  display: none;
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin: 0.875em 0;
+}
+
+.main-navigation a {
+  color: #1a1a1a;
+  display: block;
+  line-height: 1.3125;
+  outline-offset: -1px;
+  padding: 0.84375em 0;
+}
+
+.site-branding {
+  margin: 0.875em auto 0.875em 0;
+  /* Avoid overflowing wide custom logo in small screens in Firefox and IEs */
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+ul,
+ol {
+  margin: 0 0 1.75em 1.25em;
+  padding: 0;
+}
+.main-navigation {
+  font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft YaHei', '\9ED1\4F53', Arial,
+    sans-serif;
+}
+
+@media screen and (min-width: 44.375em) {
+  .header-image {
+    margin: 1.3125em 0;
+  }
+  .BasicHeader {
+    padding: 3.9375em 7.6923%;
+  }
+  .site-branding {
+    margin-top: 1.3125em;
+    margin-bottom: 1.3125em;
+  }
+  .site-title {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+  .site-description {
+    display: block;
+  }
+  .site-header-menu {
+    margin: 1.3125em 0;
+  }
+}
+
+@media screen and (min-width: 56.875em) {
+  .main-navigation .primary-menu > li {
+    float: left;
+  }
+  .main-navigation a {
+    outline-offset: -8px;
+    padding: 0.65625em 0.875em;
+    white-space: nowrap;
+  }
+  .main-navigation li:hover > a,
+  .main-navigation li.focus > a {
+    color: #007acc;
+  }
+  .main-navigation .primary-menu,
+  .main-navigation .primary-menu > li {
+    border: 0;
+  }
+  .BasicHeader {
+    padding-right: 4.5455%;
+    padding-left: 4.5455%;
+  }
+  .site-header-main {
+    align-items: flex-start;
+  }
+  .site-header-menu {
+    display: block;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+  }
+  .main-navigation {
+    margin: 0 -0.875em;
+  }
+  .main-navigation .primary-menu,
+  .main-navigation .primary-menu > li {
+    border: 0;
+  }
+}
+
+@media screen and (min-width: 61.5625em) {
+  .BasicHeader {
+    padding: 3.25em 4.5455%;
+  }
+  .site-branding,
+  .site-header-menu,
+  .header-image {
+    margin-top: 1.75em;
+    margin-bottom: 1.75em;
+  }
+  .site-branding,
+  .site-header-menu,
+  .header-image {
+    margin-top: 1.75em;
+    margin-bottom: 1.75em;
+  }
+}
