@@ -176,7 +176,7 @@ class CommentsList extends PureComponent {
               {/* <List.Item extra={<Comment comment={item} />}> */}
               <List.Item>
                 <List.Item.Meta
-                  avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png">{item.author_name}</Avatar>}
+                  avatar={<Avatar src="https://b-ssl.duitang.com/uploads/item/201407/25/20140725114914_xUZvw.thumb.700_0.jpeg">{item.author_name}</Avatar>}
                   title={item.author_name}
                   description={this.getContent(item)}
                 />
@@ -237,7 +237,7 @@ export default class Articles extends PureComponent {
   getLeftData = (article) => {
     return (<footer className={styles['entry-footer']}>
       <span className={styles['posted-on']}>
-        作者：<a >
+        作者：<a onClick={(e) => this.openContent(e, article.id)}>
           {article.author}
         </a>
       </span>
@@ -254,7 +254,7 @@ export default class Articles extends PureComponent {
         <span className="screen-reader-text" />日期：{article.created}
       </span>
       <span className={styles['posted-on']}>
-        <a href="/%E6%9D%82%E8%B0%88/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8F%AF%E8%83%BD%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%9D%A2%E8%AF%95/#comments">
+        <a onClick={(e) => this.openContent(e, article.id)}>
           评论({article.comment})<span className="screen-reader-text" />
         </a>
       </span>
@@ -275,12 +275,12 @@ export default class Articles extends PureComponent {
             <div className={styles['site-article']}>
               <div className={styles['entry-header']}>
                 <h2 className={styles['entry-title']} >
-                  <a href="">{article.title}</a>
+                  <a onClick={(e) => this.openContent(e, article.id)}>{article.title}</a>
                 </h2>
               </div>
               <div>
                 <div className={styles['entry-content']} style={isOpen ? { width: '100%' } : {}}>
-                  {article.content}
+                <span dangerouslySetInnerHTML={{ __html: isOpen ? article.content : article.content_short }} />
                   {!isOpen ? <Button onClick={(e) => this.openContent(e, article.id)} className={styles['btn-3']} ghost type="primary" style={{ marginLeft: 10, padding: '0px 11px 0px 11px' }}>
                     <span style={{ color: '#007acc' }}>展开全文</span>
                     <Icon style={{ color: '#007acc', marginLeft: 1 }} type="arrow-down" />
