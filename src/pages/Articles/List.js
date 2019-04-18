@@ -279,7 +279,7 @@ export default class Articles extends PureComponent {
                 </h2>
               </div>
               <div>
-                <div className={styles['entry-content']} style={isOpen ? { width: '100%' } : {}}>
+                <div className={styles['entry-content']} style={isOpen ? { width: '90%' } : {}}>
                 <span dangerouslySetInnerHTML={{ __html: isOpen ? article.content : article.content_short }} />
                   {!isOpen ? <Button onClick={(e) => this.openContent(e, article.id)} className={styles['btn-3']} ghost type="primary" style={{ marginLeft: 10, padding: '0px 11px 0px 11px' }}>
                     <span style={{ color: '#007acc' }}>展开全文</span>

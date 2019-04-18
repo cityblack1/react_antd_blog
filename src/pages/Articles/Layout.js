@@ -18,7 +18,7 @@ export default class ArticleLayout extends PureComponent {
                         <div className={styles['site-inner']}>
                             <BasicHeader />
                             <div className={styles.standardList}>
-                                <MenuDropDown />
+                                {/* <MenuDropDown /> */}
                                 <div className={styles['site-content']}>
                                     <div className={styles['content-area']}>
                                         {this.props.children}
