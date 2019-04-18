@@ -8,7 +8,7 @@ export default class BasicHeader extends PureComponent {
         <div className={styles['site-header-main']}>
           <div className={styles['site-branding']}>
             <h1 className={styles['site-title']}>
-              <a href="http://www.cityblack1.cc" rel="home">
+              <a href="/" rel="home">
                 褐色城市
               </a>
             </h1>
@@ -42,8 +42,8 @@ export default class BasicHeader extends PureComponent {
           </div>
         </div>
         <div className={styles['header-image']}>
-          <a href="http://www.cityblack1.cc" rel="home">
-            <img alt="褐色城市" src="http://wx2.sinaimg.cn/large/6b40c36cly1g2492dj1fzj20xc07sh25.jpg" />
+          <a href="/" rel="home">
+            <img alt="褐色城市" src="https://wx2.sinaimg.cn/large/6b40c36cly1g2492dj1fzj20xc07sh25.jpg" />
           </a>
         </div>
         <div id="pageHead" />

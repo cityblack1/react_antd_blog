@@ -117,7 +117,6 @@ export default {
 
   proxy: {
     '/api': {
-      // target: 'http://ops-web--mr-1730.ops--mr-1730.zapps.zhihu.com/',
       target: 'http://localhost:9000',
       changeOrigin: true,
     },
