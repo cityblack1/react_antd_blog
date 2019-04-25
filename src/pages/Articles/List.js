@@ -176,7 +176,7 @@ class CommentsList extends PureComponent {
               {/* <List.Item extra={<Comment comment={item} />}> */}
               <List.Item>
                 <List.Item.Meta
-                  avatar={<Avatar src="https://b-ssl.duitang.com/uploads/item/201407/25/20140725114914_xUZvw.thumb.700_0.jpeg">{item.author_name}</Avatar>}
+                  avatar={<Avatar src="http://b-ssl.duitang.com/uploads/item/201407/25/20140725114914_xUZvw.thumb.700_0.jpeg">{item.author_name}</Avatar>}
                   title={item.author_name}
                   description={this.getContent(item)}
                 />

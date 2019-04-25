@@ -43,7 +43,7 @@ export default class BasicHeader extends PureComponent {
         </div>
         <div className={styles['header-image']}>
           <a href="/" rel="home">
-            <img alt="褐色城市" src="https://wx2.sinaimg.cn/large/6b40c36cly1g2492dj1fzj20xc07sh25.jpg" />
+            <img alt="褐色城市" src="http://wx2.sinaimg.cn/large/6b40c36cly1g2492dj1fzj20xc07sh25.jpg" />
           </a>
         </div>
         <div id="pageHead" />
