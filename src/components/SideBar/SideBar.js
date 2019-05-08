@@ -143,6 +143,7 @@ export default class SideBar extends PureComponent {
           {/* </div>
         </section> */}
         <section className={styles.widget} />
+        <div style={{fontSize: 10, float: 'right', bottom: 0}}>冀ICP备17027160号-1</div>
       </div>
     );
   }
